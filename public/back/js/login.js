@@ -50,9 +50,14 @@ $(function(){
                     }
                 }
             },
-        }
+        },
 
-
+        //配置小图标, 成功 失败  校验中
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
 
     })
 
