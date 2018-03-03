@@ -65,11 +65,13 @@ $(function(){
    $('form').on('success.form.bv',function(e){
        e.preventDefault();
    //发送ajax请求数据
+       console.log($('form').serialize());
        $.ajax({
            type:'post',
            url:'/employee/employeeLogin',
            data:$('form').serialize(),
            dataType:'json',
+
            success:function(info){
                console.log(info);
                //把username字段改为校验失败
