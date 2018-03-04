@@ -9,6 +9,7 @@ $(function () {
     showSpinner: false
   })
 
+
   $(document).ajaxStart(function () {
     //进度条加载效果
     NProgress.start();
@@ -28,6 +29,7 @@ $(function () {
   //二级菜单的显示与隐藏
   //思路： 找到二级分类的a标签
   $(".second").prev().on("click", function () {
+
 
     //slideToggle
     //fadeToggle
@@ -61,6 +63,7 @@ $(function () {
   //不要在事件里面注册事件
   $(".btn_logout").on("click", function () {
     //需要告诉服务器，我需要退出，  让服务器把对应的session销毁
+
     $.ajax({
       type:'GET',
       url:'/employee/employeeLogout',
@@ -75,13 +78,15 @@ $(function () {
   });
 
 
+
+
   //如果不是登录页，发送ajax请求，查询管理员是否登录
   if(location.href.indexOf("login.html") == -1){
     $.ajax({
       type:"GET",
       url:"/employee/checkRootLogin",
       success:function (info) {
-        console.log(info);
+        //console.log(info);
         //判断，info.error是否是400
         if(info.error === 400) {
           location.href = "login.html";

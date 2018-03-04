@@ -3,6 +3,7 @@
  */
 $(function () {
 
+
   //1. 准备dom
   var myChart = echarts.init(document.querySelector(".charts_1"));
   var myChart2 = echarts.init(document.querySelector(".charts_2"));
