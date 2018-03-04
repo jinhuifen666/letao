@@ -23,6 +23,7 @@ $(function(){
                     bootstrapMajorVersion:3,
                     currentPage:page, //设置当前页
                     totalPages:Math.ceil(info.total/info.size), //设置总页数
+                    numberofPages:5,//设置每页显示多少条数据
                     //当页码被点击的时候触发，
                      onPageClicked:function(a,b,c,p){
                          //修改page的值，这样渲染的就是当前修改的page
