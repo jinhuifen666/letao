@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*导航样式开始*/
+ .nav{
+    padding:10px;
+}
+.nav li{
+    float:left;
+    width: 33.33%;
+}
+/*商品样式开始*/
+.product{
+    padding:10px;
+}
+.product a{
+    float:left;
+    border:1px solid #ccc;
+    width: 48%;
+    text-align:center;
+    padding:10px;
+    margin-bottom:8px;
+}
+.product a:nth-child(odd){
+    margin-right:4%;
+}
+p span:first-child{
+    color:red;
+}
+p span:last-child{
+    text-decoration:line-through;
+}
